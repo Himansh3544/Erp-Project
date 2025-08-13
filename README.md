@@ -5,12 +5,7 @@ A modular ERP starter in MERN with advanced UI and AI integration stubs.
 ## Quickstart
 
 1. Copy `.env.example` to `.env` and adjust values
-2. Start Mongo via Docker
-
-```bash
-docker compose up -d
-```
-
+2. Ensure MongoDB is running locally (mongodb://localhost:27017) or set `MONGODB_URI` to your MongoDB Atlas connection string
 3. Install deps
 
 ```bash
