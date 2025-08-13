@@ -2,7 +2,7 @@ import type { Request, Response } from 'express';
 import { z } from 'zod';
 import { Customer } from './customer.model.js';
 import { validateBody } from '../../utils/validate.js';
-import { CustomerInput, PaginatedQuery } from '@erp/shared/src/index.js';
+import { CustomerInput, PaginatedQuery } from '@erp/shared';
 
 const querySchema = PaginatedQuery;
 const createSchema = CustomerInput;

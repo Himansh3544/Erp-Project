@@ -13,6 +13,7 @@
     "noFallthroughCasesInSwitch": true,
     "baseUrl": ".",
     "paths": {
+      "@erp/shared": ["packages/shared/src/index.ts"],
       "@erp/shared/*": ["packages/shared/src/*"]
     }
   },

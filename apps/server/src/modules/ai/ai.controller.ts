@@ -1,7 +1,7 @@
 import type { Request, Response } from 'express';
 import OpenAI from 'openai';
 import { z } from 'zod';
-import { AIChatRequest } from '@erp/shared/src/index.js';
+import { AIChatRequest } from '@erp/shared';
 
 const bodySchema = AIChatRequest;
 
