@@ -1,0 +1,17 @@
+{
+  "name": "mern-erp",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "concurrently -n server,web -c blue,green \"npm run dev --workspace=@erp/server\" \"npm run dev --workspace=@erp/web\"",
+    "build": "npm run build --workspaces",
+    "start": "npm run start --workspace=@erp/server"
+  },
+  "devDependencies": {
+    "concurrently": "^9.0.0",
+    "typescript": "^5.5.0"
+  }
+}
